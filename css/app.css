@@ -297,6 +297,10 @@ header nav ul li a {
   background-color: #FF9166;
 }
 
+.page {
+  padding-top: 100px;
+}
+
 footer {
   background: linear-gradient(to bottom, rgb(10, 93, 123) 0%, rgb(4, 55, 78) 100%);
   padding-top: 30px;

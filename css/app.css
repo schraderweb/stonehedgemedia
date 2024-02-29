@@ -17,6 +17,12 @@ ul {
   list-style: none;
 }
 
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #757589;
+}
+
 a {
   text-decoration: none;
 }
@@ -29,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   margin: 0 auto;
-  width: 1170px;
+  max-width: 1170px;
 }
 
 header {
@@ -128,10 +134,11 @@ header nav ul li a {
 }
 
 .partners {
-  background-image: url(../imgs/main-bg.png);
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/triangle-mosaic.png);
   background-position: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-top: 1px solid #f1f1ff;
 }
 .partners .boxs {
   display: flex;
@@ -146,6 +153,7 @@ header nav ul li a {
 }
 .partners .boxs .tabs .tabs-content {
   background: #FFFFFF;
+  border: 1px solid #f1f1f1;
   display: flex;
   flex-direction: column;
 }
@@ -354,6 +362,157 @@ footer .container .links .link-info p {
   color: #8496b0;
 }
 
+.header {
+  position: relative;
+}
+
+.barcrumb {
+  height: 200px;
+  background: linear-gradient(180deg, #EAF8FF 0%, #F6F6FF 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup .btn {
+  font-size: 16px;
+  font-weight: 700;
+  fill: #000248;
+  color: #000248;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #000248;
+  border-radius: 0px 0px 0px 0px;
+  padding: 18px 20px 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.signup .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 20px;
+}
+.signup .container .text {
+  width: 60%;
+}
+.signup .container .image {
+  width: 40%;
+}
+.signup .container .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(241, 241, 241, 0.262745098);
+}
+.why .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 25px;
+}
+.why .container p {
+  text-align: center;
+}
+.why .container .boxs {
+  display: flex;
+  justify-content: space-between;
+}
+.why .container .boxs .box {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1cbc9d;
+  border-radius: 25px;
+  padding: 20px;
+  gap: 15px;
+}
+.why .container .boxs .box .icon {
+  color: #fff;
+}
+.why .container .boxs .box h3 {
+  font-size: 21px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.signup-form {
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-form .container {
+  padding: 50px;
+  box-shadow: 0px 0px 20px 0px rgba(187, 187, 187, 0.5);
+  max-width: 900px;
+}
+.signup-form .container h2 {
+  margin-top: 30px;
+}
+.signup-form .container .fields {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cdcdcd;
+}
+.signup-form .container .fields .field {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.signup-form .container .fields .field label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #436a6a;
+  text-transform: uppercase;
+}
+.signup-form .container .fields .field input, .signup-form .container .fields .field select {
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+}
+.signup-form .container .field-full {
+  width: 100% !important;
+}
+.signup-form .container .field-link {
+  display: flex !important;
+  flex-direction: row !important;
+  padding: 10px;
+}
+.signup-form .container .field-btn button {
+  padding: 10px;
+  background-color: #1cbc9d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -413,5 +572,58 @@ footer .container .links .link-info p {
   }
   .swiper-slide img {
     width: 90% !important;
+  }
+  .barcrumb {
+    height: 140px;
+    background: linear-gradient(180deg, #EAF8FF 0%, #F6F6FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+  }
+  .signup .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    max-width: 100%;
+  }
+  .signup .container .text {
+    width: 100%;
+    order: 1;
+  }
+  .signup .container .image {
+    width: 100%;
+  }
+  .why .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 25px;
+    max-width: 100% !important;
+    margin: auto;
+  }
+  .why .container p {
+    padding: 15px;
+  }
+  .why .container h3 {
+    text-align: center;
+    padding: 15px;
+  }
+  .why .container .boxs {
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+  }
+  .why .container .boxs .box {
+    width: 250px;
+    margin: auto;
   }
 }/*# sourceMappingURL=app.css.map */

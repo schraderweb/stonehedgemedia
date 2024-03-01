@@ -134,11 +134,12 @@ header nav ul li a {
 }
 
 .partners {
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/triangle-mosaic.png);
+  background-image: url(../imgs/triangle-mosaic.webp);
   background-position: center;
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid #f1f1ff;
+  position: relative;
 }
 .partners .boxs {
   display: flex;
@@ -261,7 +262,7 @@ header nav ul li a {
 }
 .about .boxes .box {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   padding: 10px;
 }

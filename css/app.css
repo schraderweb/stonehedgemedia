@@ -134,7 +134,7 @@ header nav ul li a {
 }
 
 .partners {
-  background-image: url(../imgs/triangle-mosaic.webp);
+  background-image: url(../imgs/triangle-mosaicx.webp);
   background-position: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -184,6 +184,7 @@ header nav ul li a {
 .partners .boxs .our-partners .swiper-slide {
   text-align: center;
   font-size: 18px;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
